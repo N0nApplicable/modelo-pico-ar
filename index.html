@@ -9,11 +9,8 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs='sourceType: webcam;'>
 			<a-marker preset="hiro">
-				<a-assets>
-					<a-asset-item id="Pico-obj" src="Archivos/Pico.obj"></a-asset-item>
-					<a-asset-item id="Pico-mtl" src="Archivos/Pico.mtl"></a-asset-item>
-				</a-assets>
-				<a-entity obj-model="obj: #Pico-obj; mtl: #Pico-mtl"></a-entity>
+				<a-entity obj-model="obj: url(/Archivos/Pico.obj);
+				mtl: url(/Archivos/Pico.mtl)">
 			</a-marker>
         	<a-entity camera></a-entity>
         </a-scene>
